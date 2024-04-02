@@ -27,7 +27,7 @@ $("button").on("click", function(){
     $(".btn").removeClass("button-override");
     probability();
     if (checkNum === 1){
-        count++;
+        
         if(highScore < count){
             highScore = count;
             localStorage.setItem("highScoreKey", highScore);
@@ -37,6 +37,7 @@ $("button").on("click", function(){
     else {
         count = 0;
     }
+    count++;
 });
 
 $("a").on("click", function(){
